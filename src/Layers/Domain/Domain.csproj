@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Configurations>Debug;Release</Configurations>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="10.1.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Contracts\Contracts.csproj" />
+		<ProjectReference Include="..\Infrastructure\ASP.Models\ASP.Models.csproj" />
+		<ProjectReference Include="..\Models\Models.csproj" />
+		<ProjectReference Include="..\Store\Store.csproj" />
+	</ItemGroup>
+
+</Project>

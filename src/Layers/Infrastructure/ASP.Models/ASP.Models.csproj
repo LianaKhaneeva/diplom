@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Configurations>Debug;Release</Configurations>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="10.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Common\Common.csproj" />
+		<ProjectReference Include="..\..\Models\Models.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Views\ShipperSlot\vm.Details.map.cs">
+		  <DependentUpon>vm.Details.cs</DependentUpon>
+		</Compile>
+		<Compile Update="Views\ShipperSlot\vm.Item.map.cs">
+		  <DependentUpon>vm.Item.cs</DependentUpon>
+		</Compile>
+		<Compile Update="Views\ShipperSlot\vm.New.map.cs">
+		  <DependentUpon>vm.New.cs</DependentUpon>
+		</Compile>
+		<Compile Update="Views\CarrierSlot\vm.Details.map.cs">
+		  <DependentUpon>vm.Details.cs</DependentUpon>
+		</Compile>
+		<Compile Update="Views\CarrierSlot\vm.Item.map.cs">
+		  <DependentUpon>vm.Item.cs</DependentUpon>
+		</Compile>
+		<Compile Update="Views\CarrierSlot\vm.New.map.cs">
+		  <DependentUpon>vm.New.cs</DependentUpon>
+		</Compile>
+		<Compile Update="Views\User\vm.Item.map.cs">
+		  <DependentUpon>vm.Item.cs</DependentUpon>
+		</Compile>
+		<Compile Update="Views\User\vm.Details.map.cs">
+			<DependentUpon>vm.Details.cs</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+</Project>
